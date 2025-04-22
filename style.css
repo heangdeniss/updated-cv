@@ -1,0 +1,251 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f7f7f7;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.sidebar {
+    width: 30%;
+    background: #E8D8D3;
+    padding: 20px;
+    color: #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Align to the top */
+    height: 100%;
+    box-sizing: border-box;
+}
+.header {
+    background: #2d1b3b; /* Adjusted the color to a more neutral shade */
+    color: white;
+    text-align: center;
+    font-size: 24px; /* Increased font size */
+    font-weight: 600;
+    width: 67.6%;
+    height: 75px; /* Adjusted height */
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 10px;
+    border-bottom: 2px solid #2d1b3b; /* Added a border to define the top section better */
+}
+
+.subtitle {
+    font-size: 16px; /* Adjusted subtitle font size */
+    color: #f7f7f7;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.profile-pic-container {
+    width: 150px; /* Increased size */
+    height: 160px; /* Increased size */
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #2d1b3b;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sidebar h2 {
+    font-size: 16px;
+    color: #2d1b3b;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #2d1b3b;
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+.sidebar p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.sidebar-content {
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.main {
+    width: 70%;
+    padding: 20px;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d1b3b;
+    border-bottom: 2px solid #2d1b3b;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.main p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute the content */
+    align-items: center; /* Align vertically */
+}
+
+.job-date {
+    font-weight: bold;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: auto; /* Push the b-tag content to the right */
+}
+
+
+
+.job-description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.job-description p {
+    margin-bottom: 5px;
+}
+
+.job-description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.job-description li {
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: none;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.skills-list li:before {
+    content: "• "; /* Custom bullet style */
+    color: #2d1b3b;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-weight: bold;
+}
+
+.education-title {
+    font-size: 18px; /* Same size as section-title */
+    font-weight: bold;
+    color: #2d1b3b;
+    border-bottom: 2px solid #2d1b3b;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.education-job-title {
+    font-weight: bold;  /* Title style: bold */
+    color: #000000;  /* Title color: black */
+    font-size: 14px;  /* Title font size */
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start; /* Align the title to the left */
+    align-items: center; /* Align vertically */
+}
+
+.education-job-description {
+    font-size: 12px;  /* Description style: smaller font */
+    color: #666;  /* Description color: light gray */
+    margin-top: 5px;
+    padding-left: 1px; /* Adds space for the bullet */
+    line-height: 1.5; /* Line spacing */
+    list-style-position: outside; /* Ensures bullet points appear outside */
+}
+
+.education-job-description li {
+    font-weight: bold;  /* Make the list items bold like title */
+    color: #000000;  /* Make list items black */
+    font-size: 14px;  /* Match the size of job-title */
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between; /* Distribute the content */
+    list-style-type: disc; /* Adds the bullet point */
+}
+
+
+
+.education-job-date {
+    margin-left: auto; /* Push the date to the right */
+    font-weight: bold;
+    color: #000000; /* Set the color to black */
+    font-size: 12px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: black;
+}
